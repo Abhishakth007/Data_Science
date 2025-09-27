@@ -1,9 +1,33 @@
-# Cryptocurrency Liquidity Prediction System
+# Data Science & Machine Learning Projects
 
-A machine learning system to predict cryptocurrency liquidity levels for market stability assessment.
+This repository contains Exploratory Data Analysis (EDA) and Machine Learning projects. The goal is to analyze datasets, visualize patterns, and build models to gain insights.
+
+## 📚 Projects Overview
+
+### 1. Iris Dataset EDA 🌸
+- Understanding data distribution
+- Visualizing relationships between features
+- Identifying patterns and insights
+
+### 2. Logistic Regression Assignment 📊
+- Complete implementation with 10 questions
+- Theory and practical coding examples
+- Covers binary and multiclass classification
+- Hyperparameter tuning and feature scaling
+
+### 3. Cryptocurrency Liquidity Prediction System 💰
+- Machine learning system to predict cryptocurrency liquidity levels
+- Market stability assessment and risk detection
+- Interactive web dashboard with Streamlit
 
 ## 🚀 Quick Start
 
+### For Logistic Regression Assignment
+1. Open `Logistic_Regression.ipynb` in Jupyter Notebook
+2. Run all cells to see complete implementation
+3. Each question is in a separate cell with working code
+
+### For Cryptocurrency Project
 1. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
@@ -14,131 +38,53 @@ A machine learning system to predict cryptocurrency liquidity levels for market 
    python main.py
    ```
 
-3. **Run EDA Analysis**
-   ```bash
-   python eda.py
-   ```
-
-4. **Launch Web App**
+3. **Launch Web App**
    ```bash
    streamlit run app.py
    ```
 
-5. **Open Browser**
-   Navigate to `http://localhost:8501`
-
-## 📊 Project Overview
-
-This project predicts cryptocurrency liquidity levels using machine learning to help detect market instability risks early.
-
-### Key Features
-- **Liquidity Prediction**: Forecasts market liquidity using ML models
-- **Risk Assessment**: Identifies potential market instability
-- **Interactive Dashboard**: Web interface for real-time predictions
-- **Data Visualization**: Comprehensive EDA and trend analysis
-
-### Model Performance
-- **Accuracy**: 72% (R² = 0.72)
-- **RMSE**: 908,878,241
-- **MAE**: 161,030,677
-
-## 📁 Project Structure
+## 📁 Repository Structure
 
 ```
-├── main.py                    # Main ML pipeline
-├── eda.py                     # Exploratory data analysis
-├── app.py                     # Streamlit web app
-├── requirements.txt           # Dependencies
-├── HLD.md                     # High-level design
-├── LLD.md                     # Low-level design
-├── pipeline_architecture.md   # Pipeline documentation
-├── eda_report.md              # EDA report
-├── final_report.md            # Final project report
-├── eda_visualizations.png     # EDA plots
-├── interactive_market_analysis.html  # Interactive plots
-├── interactive_trends.html    # Interactive trends
-├── liquidity_model.pkl        # Trained model
-├── scaler.pkl                 # Data scaler
-└── *.csv                      # Data files
+├── Logistic_Regression.ipynb           # Complete assignment with 10 questions
+├── Advance_Statistics.ipynb            # Advanced statistical analysis
+├── DataStructures_&_DataTypes.ipynb    # Python data structures
+├── Data_Toolkit.ipynb                  # Data manipulation tools
+├── Feature_Engineering.ipynb           # Feature engineering techniques
+├── File_Handling_&_Exception_Handling.ipynb  # File operations
+├── Iris_EDA.ipynb                      # Iris dataset analysis
+├── Neural_Network_A_Simple_Perceptron_.ipynb  # Neural network basics
+├── OOPs_Python.ipynb                   # Object-oriented programming
+├── Python_Basics.ipynb                 # Python fundamentals
+├── Python_Functions.ipynb              # Function programming
+├── Statistics_Basics.ipynb             # Basic statistics
+└── README.md                           # This file
 ```
 
-## 🔧 Technical Details
+## 🔧 Technical Stack
 
-### Data Sources
-- Historical cryptocurrency data (March 2022)
-- 1,000 records across 506 cryptocurrencies
-- Features: price, volume, market cap, price changes
+- **Python 3.13+**
+- **Jupyter Notebooks**
+- **Pandas, NumPy, Matplotlib, Seaborn**
+- **Scikit-learn**
+- **Streamlit** (for web apps)
 
-### Features Engineered
-- **Liquidity Score**: Primary target variable
-- **Price Volatility**: 24h price change magnitude
-- **Volume-to-Market-Cap Ratio**: Trading activity indicator
-- **Price Change Patterns**: Short and long-term trends
+## 📈 Key Features
 
-### Models Used
-- **Linear Regression**: Primary model (R² = 0.72)
-- **Random Forest**: Alternative model (R² = 0.67)
+- **Comprehensive EDA**: Detailed data analysis and visualization
+- **Machine Learning**: Various algorithms and techniques
+- **Interactive Dashboards**: Web-based data exploration
+- **Educational Content**: Step-by-step tutorials and assignments
 
-## 📈 Usage
+## 🎯 Learning Objectives
 
-### Web Interface
-1. Launch the Streamlit app
-2. Input cryptocurrency parameters
-3. Get liquidity predictions
-4. View risk assessment
-5. Explore data visualizations
-
-### API Usage
-```python
-import joblib
-import numpy as np
-
-# Load model
-model = joblib.load('liquidity_model.pkl')
-scaler = joblib.load('scaler.pkl')
-
-# Prepare features
-features = np.array([price, volume, mkt_cap, ...]).reshape(1, -1)
-features_scaled = scaler.transform(features)
-
-# Predict
-liquidity_score = model.predict(features_scaled)[0]
-```
-
-## 📋 Requirements
-
-- Python 3.13+
-- 8GB RAM minimum
-- 1GB storage
-- Web browser
-
-## 🎯 Business Impact
-
-- **Risk Management**: Early detection of liquidity crises
-- **Market Stability**: Maintain stable trading conditions
-- **Decision Support**: Data-driven trading insights
-- **Regulatory Compliance**: Market surveillance capabilities
-
-## 🔮 Future Enhancements
-
-- Real-time data integration
-- Advanced deep learning models
-- Social media sentiment analysis
-- Cloud deployment
-- API development
-
-## 📞 Support
-
-For questions or issues, refer to the documentation files:
-- `HLD.md` - System architecture
-- `LLD.md` - Technical implementation
-- `pipeline_architecture.md` - Data flow
-- `eda_report.md` - Data analysis
-- `final_report.md` - Complete findings
+- Data analysis and visualization
+- Machine learning model development
+- Statistical analysis and interpretation
+- Python programming for data science
+- Real-world project implementation
 
 ---
 
-**Status**: ✅ Production Ready
-**Version**: 1.0.0
+**Status**: ✅ Active Development
 **Last Updated**: March 2024
-
